@@ -11,7 +11,7 @@ let mainBox = async (data) =>{
     let Data = await data;
     console.log(Data);
 
-    img.src = Data.icon[0];
+    img.src = "https:" + Data.icon[0];
     text.textContent = Data.text[0];
     wind.textContent = `${Data.wind[0]}Km/h`;
     temp.textContent = `${Data.temp[0]}°C`;
@@ -35,7 +35,7 @@ let futureBox = async (data) => {
 
         let tempText = Data.temp[i];
 
-        img.src = Data.icon[i];
+        img.src = "https:" + Data.icon[i];
         wind.textContent = `${Data.wind[i]}Km/h`;
         temp.textContent = `${tempText[0]}°C - ${tempText[1]}°C`
         day.textContent = dayText;
