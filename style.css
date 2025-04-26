@@ -208,6 +208,7 @@ body{
 
     .forecast{
         gap: 2rem;
+        padding-bottom: 10vh;
     }
 
     .loc{
